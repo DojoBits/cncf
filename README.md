@@ -1,4 +1,4 @@
-<img src="https://www.cncf.io/wp-content/uploads/2023/04/cncf-main-site-logo.svg" style="background-color:#FFFFFF"/>
+![CNCF](./cncf-logo.png)
 
 # Events and Conferences materials
 
