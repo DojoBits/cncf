@@ -38,11 +38,11 @@ $ ssh -o IdentitiesOnly=yes -i ./keys-virginia/key.pem ubuntu@X.X.X.X
 
 ## SSH Keys
 
-To access the Cloud VMs you'll need an SSH key for the authentication. Please follow those links to get the keys from S3
+To access the Cloud VMs, you'll need an SSH key to authenticate. Please follow those links to get the keys from S3
 in either PEM or PPK format, depending on the SSH client that you use:
 
-- PEM: bit.ly/3yJQ3Ry
-- PPK: bit.ly/4bTDXnD
+- [PEM](bit.ly/3yJQ3Ry)
+- [PPK](bit.ly/4bTDXnD)
 
 
 Enjoy!
