@@ -340,7 +340,7 @@ pod/root-user created
 ```shell
 ~/k01$ kubectl get po
 NAME        READY   STATUS    RESTARTS   AGE
-root-user   1/1     Running   0          3s
+priv-pod   1/1     Running   0          3s
 
 ~/k01$
 ```
@@ -577,7 +577,7 @@ Let's create the pod:
 ```shell
 ~/k01$ kubectl apply -f priv-user-crictl.yaml
 
-pod/root-user-crictl created
+pod/priv-user-crictl created
 
 ~/k01$
 ```
@@ -588,8 +588,8 @@ Confirm that our pod is running:
 ~/k01$ kubectl get po
 
 NAME               READY   STATUS    RESTARTS   AGE
-root-user          1/1     Running   0          3m37s
-root-user-crictl   1/1     Running   0          10s
+prinv-pod          1/1     Running   0          3m37s
+prinv-user-crictl   1/1     Running   0          10s
 
 ~/k01$
 ```
@@ -683,7 +683,7 @@ Let's run `kube-score` against our pod definition and see what it says:
 ```shell
 ~/k01$ kube-score score priv-pod.yaml
 
-v1/Pod root-user                                                              💥
+v1/Pod priv-pod                                                              💥
     path=/home/ubuntu/k01/priv-pod.yaml
     [CRITICAL] Container Ephemeral Storage Request and Limit
         · root-user -> Ephemeral Storage limit is not set
@@ -1025,8 +1025,8 @@ Delete the pods we've' created:
 ```shell
 ~$ kubectl delete po/priv-pod po/priv-user-crictl po/safer-pod --now
 
-pod "root-user" deleted
-pod "root-user-crictl" deleted
+pod "priv-user" deleted
+pod "priv-user-crictl" deleted
 pod "safer-pod" deleted
 
 ~$
