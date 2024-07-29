@@ -15,6 +15,7 @@ In this repository, you can find two files:
 > Note: Please DON'T open the cncf-owasp-k8s-top-10-k01-solution.md till the end of the workshop!
 
 - cncf-owasp-k8s-top-10-k01.md             - Workshop guide
+- cncf-owasp-k8s-top-10-k01-solution.pdf   - Workshop slides
 - cncf-owasp-k8s-top-10-k01-solution.md    - Optional solution to the challenge tasks.
 
 
